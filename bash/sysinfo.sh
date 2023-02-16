@@ -1,9 +1,17 @@
 #!/bin/bash
 
-echo "FQDN: $(hostname)"
-echo "Host Information: "
-hostnamectl status | sed -n 1,9p 	#I'm using sed with -n option to print line 1-9 filtering the large output of hostnamectl
-echo "IP Addresses: "
-hostname -I | awk '{print$1" " $2" " $3}' # Here I'm bringing host IP address(Not Local) and printing just three ip in case of many ip address.
-echo "Root Filesystem Status: "
-df -h / 		#Here I'm using df with option -h to bring the disk usgage output in Human Readable Form of partition mounted on /
+Hostname=$(hostname -f)
+Os_name_version=$(hostnamectl status| sed -n 's/^Operating System: //p')
+IP=$(ip route | head -n1 | awk '{print$3}')
+root_space=$(df -h / | tail -n 1 | awk '{print$3}')
+cat << EOF
+
+Report for $(hostname)
+======================
+FQDN: $Hostname
+Operating System name and version: $Os_name_version
+Ip Address: $IP
+Root Filesystem Free Space: $root_space
+======================
+
+EOF
