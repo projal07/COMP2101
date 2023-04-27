@@ -41,9 +41,6 @@ bash bashScript.sh
 
 Credits:
 
-This project was developed by [Your Name] as part of the COMP2101 course at [Name of College/University].
+This project was developed by Prajwol Adhiakri as part of the COMP2101 course at Georgian College.
 
-License:
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
