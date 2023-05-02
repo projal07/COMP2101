@@ -2,7 +2,7 @@
 
 Project Name: COMP2101 Shell Scripting Project
 
-This project contains two shell scripts - one written in PowerShell and one written in Bash - that were created as part of the COMP2101 course at [Name of College/University]. The scripts were developed to demonstrate proficiency in shell scripting and to perform various tasks related to system administration.
+This project contains two shell scripts - one written in PowerShell and one written in Bash - that were created as part of the COMP2101 course at Georgian College. The scripts were developed to demonstrate proficiency in shell scripting and to perform various tasks related to system administration.
 
 Installation:
 
