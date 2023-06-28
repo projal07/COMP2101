@@ -41,6 +41,6 @@ bash bashScript.sh
 
 Credits:
 
-This project was developed by Prajwol Adhiakri as part of the COMP2101 course at Georgian College.
+This project was developed by Prajwol Adhikari as part of the COMP2101 course at Georgian College.
 
 
