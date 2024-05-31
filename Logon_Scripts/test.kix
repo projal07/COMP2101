@@ -132,18 +132,18 @@ EndIf
 ;                       Use g: "\\abcdata\apps"
                         Use h: "\\abcdata\hasys"
                         Use m: "\\abcdata\projects"
-                        Use p: "\\idcdata07\projects"
+                        Use p: "\\abc07\projects"
 
                         If InGroup("TESTGLOBAL\AMC_UOrganizations")
-                                Use u: "\\idcdata03\users"
+                                Use u: "\\abc03\users"
                         Else
-                                Use u: "\\idcdata01\users"
+                                Use u: "\\abc01\users"
                         EndIf
                 Case 1
 ;                       Use g: "\\abcdata\apps"
                         Use h: "\\abcdata\hasys"
                         Use p: "\\abcdata\projects"
-                        Use u: "\\idcdata01\users"
+                        Use u: "\\abcdata01\users"
         EndSelect
 
         Use s: "\\idcdata01\scratch"
@@ -193,11 +193,11 @@ EndIf
         If InGroup("TESTGLOBAL\ABC-BUSDEV") <> 0
                 Use V: /Del
 
-                Use V: "\\IDCDATA01\BDG"
+                Use V: "\\ABC01\XYZ"
         EndIf
 
-        If InGroup("XYZ_NUCL_ADM_Change") OR InGroup("XYZ_NUCL_ADM_Read") OR InGroup("XYZ_NUCL_CAD") OR InGroup("XYZ_NUCL_TECH")
-                Use K: "\\IDCDATA07\Nuclear_Proj"
+        If InGroup("XYZ_NUCL_ADM_Change") OR InGroup("XYZ_XYZ_ADM_Read") OR InGroup("XYZ_XYZ_CAD") OR InGroup("XYZ_XYZ_TECH")
+                Use K: "\\ABC07\XYZ"
         EndIf
 
 
